@@ -1,8 +1,25 @@
 aid: mevo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/mevo.png
 name: Mevo
-description: 'Mevo is a company surfaced as a portfolio company of matrix-partners, prosus-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: healthtech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'Mevo is a Brazilian healthtech company whose stated mission is to "descomplicar a
+  saúde" (simplify healthcare) through a digital platform that connects doctors, patients, and
+  pharmacies. Its products include Mevo Receita Digital (electronic/digital medical prescriptions
+  replacing paper scripts), and Mevo Farma / Mevo Dispensação (online medication purchase,
+  dispensing, and partner-pharmacy fulfillment with delivery). Mevo sells to hospitals, health
+  operators, clinics, and telemedicine platforms as a B2B partner. No public developer API,
+  OpenAPI, or documentation portal is currently published; this profile tracks the company in the
+  API Evangelist network. Surfaced as a portfolio company of Matrix Partners and Prosus Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/mevo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Healthtech
+- Healthcare
+- Digital Prescriptions
+- E-Prescribing
+- Pharmacy
+- Telemedicine
+- Brazil
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/mevo-domain-security.yml
 - type: Website
   url: https://mevo.com.br
+- type: Blog
+  url: https://mevo.com.br/blog
+- type: Support
+  url: https://mevosaude.com.br/faq
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
